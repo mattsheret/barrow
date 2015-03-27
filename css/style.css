@@ -1,0 +1,217 @@
+/*
+Style references:
+white = ffffff
+deep blue = 21509D
+"black" = 060F1E
+lightblue = 759EE1
+grey = 5F5F5F
+Body = 'Tienne', serif;
+Headers = 'Alegreya Sans', sans-serif; font-weight: 700 +bold italic
+*/
+
+/*Universal elements – mobile first*/
+
+body{
+	padding: 0;
+	margin: 0;
+	font-size: 10px;
+	line-height: 1.4;
+	cursor: default;
+	background-color: #FEFEFE;
+}
+
+em{
+	font-style: italic;
+}
+
+p{
+	margin: 1em 0;
+	font-family: 'Tienne', serif;
+	color: #5F5F5F;
+	font-size: 1.5em;
+}
+
+a{
+	color: white;
+}
+
+h1{
+	color: white;
+	margin: 0;
+	padding: 15% 8%;
+	font-family: 'Alegreya Sans', sans-serif; 
+	font-weight: 700;
+	text-align: center;
+	font-size: 3.8em;
+	text-transform: uppercase;
+}
+
+h2,
+h2 a{
+	font-family: 'Alegreya Sans', sans-serif; 
+	font-weight: 400;
+	font-style: italic;
+	font-size: 1.75em;
+	margin-top: 1em;
+	text-decoration: none;
+	color: #21509D;
+}
+
+/*Page header – iphone*/
+
+header{
+	background-image: url("../images/_header.jpg");
+	background-position: center top;
+	background-size: cover;
+}
+
+#shuffleButton {
+	color: #21509D;
+}
+
+#shuffleButton:hover{
+	color: #759EE1;
+}
+
+#shuffleButton:active{
+	color: #060F1E;
+}
+
+#introduction{
+	border-bottom: 1px dashed #5F5F5F;
+}
+
+/*Main article – iPhone first*/
+
+#story{ 
+	background-color:#FEFEFE;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+#story img{
+	height: 426px;
+	margin-top: 1.5em;
+}
+
+blockquote{
+	display: none;
+	padding: 7% 5%;
+	font-style: italic;
+	font-size: 2.5em;
+	color: #21509D;
+	text-align: center;
+}
+
+.memory{
+	padding: 4% 8%;
+	width: 84%;
+}
+
+.frame{
+	margin: 0 8%;
+	padding: 8% 0;
+	width: 84%;
+	background-color:#FEFEFE;
+}
+
+#dateline{
+	border-top: 1px dashed #5F5F5F;
+}
+
+/*Footer - iPhone*/
+
+#biog{
+	background-color:#5F5F5F;
+	padding: 4% 8%;
+	width: 84%;
+}
+
+#biog p{
+	font-family: 'Tienne', serif; 
+	color: #ffffff;
+	font-size: 1.5em;
+}
+
+/*break points for mid-size screens*/
+
+@media screen and (min-width: 566px){
+
+
+p{
+	margin: 15px 0;
+}
+
+h1{
+	margin: 0;
+	padding: 15% 4%;
+}
+
+/*Page header*/
+
+/*Main article*/
+#story{ 
+	background-color:#FEFEFE;
+	margin: 0 auto;
+}
+
+#story img{
+	width: 100%;
+	height: auto;
+	margin-top: 1.5em;
+}
+
+blockquote{
+	padding: 34px 28px;
+}
+
+.memory{
+	width: 475px;
+	margin: 0 auto;
+	padding: 23px 45px;
+}
+
+.frame{
+	width: 475px;
+	margin: 10px auto;
+	padding: 30px 0;
+	background-color:#FEFEFE;
+}
+
+/*Footer*/
+
+footer{
+	background-color:#5F5F5F;
+}
+
+#biog{
+	margin: 0 auto;
+	padding: 23px 45px;
+	width: 475px;
+}
+
+/*break point for desktops*/
+
+@media screen and (min-width: 800px){
+
+body{
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+h1{
+	margin: 0;
+	padding: 15% 4%;
+}
+
+blockquote{
+	padding: 43px 28px;
+}
+
+/*Content widths*/
+
+.memory,
+.frame,
+#biog{
+	width: 625px;
+}

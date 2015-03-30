@@ -60,7 +60,7 @@ h2 a{
 /*Page header – iphone*/
 
 header{
-	background-image: url("../images/_header.jpg");
+	background-image: url("../images/_header_small.jpg");
 	background-position: center top;
 	background-size: cover;
 }
@@ -148,6 +148,10 @@ h1{
 }
 
 /*Page header*/
+
+header{
+	background-image: url("../images/_header_large.jpg");
+}
 
 /*Main article*/
 #story{ 
